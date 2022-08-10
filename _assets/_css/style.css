@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #333;
+}
+
+.to-do {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+  gap: 15px;
+}
+
+.to-do--title {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #555;
+  box-shadow: 0px 0px 5px #000;
+  color: #fff;
+}
+
+.to-do--list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.to-do--item {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #555;
+  box-shadow: 0px 0px 5px #000;
+  color: #fff;
+}
+
+.to-do--item div {
+  width: 80%;
+  font-size: 20px;
+}
+
+.to-do--item:hover {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  background-color: #fff;
+  color: #000;
+}
+
+.to-do--item input {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.to-do--item input[type="button"] {
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.to-do--item input[type="checkbox"]:checked + div {
+  text-decoration: line-through;
+}
+
+.to-do--new-item {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #555;
+  padding: 10px 0px;
+  box-shadow: 0px 0px 5px #000;
+}
+
+.to-do--new-item div {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.to-do--new-item input {
+  width: 80%;
+  font-size: 20px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
